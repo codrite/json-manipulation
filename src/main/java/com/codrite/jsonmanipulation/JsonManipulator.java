@@ -9,12 +9,14 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.fasterxml.jackson.databind.node.TextNode;
+import lombok.extern.slf4j.Slf4j;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+@Slf4j
 public class JsonManipulator {
 
     String add(String name, String value) throws JsonProcessingException {
